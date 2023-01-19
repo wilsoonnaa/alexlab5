@@ -26,8 +26,8 @@
                 <div class="task-content">
                     <span class="task-card-assignedTo"><?php echo $task["assignedTo"] ?></span>
                     <span class="task-card-deadline"><?php echo $task["deadline"] ?></span>
-                    <a class="hyperlinks" href="update.php?id=<?php echo $task["id"]?>">Update</a>
-                    <a class="hyperlinks" href="delete.php?id=<?php echo $task["id"]?>">Delete</a>
+                    <a class="hyperlinks" href="update.php?id=<?php echo $task['id']?>">Update</a>
+                    <a class="hyperlinks" href="delete.php?id=<?php echo $task['id']?>">Delete</a>
                 </div>
             </div>
         <?php
