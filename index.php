@@ -37,7 +37,7 @@
        
     </div>
 
-    <a href="create.php"><strong>Add a new task!</strong></a>
+    <a href="admin.php"><strong>Add a new task!</strong></a>
 </body>
 
 </html>
