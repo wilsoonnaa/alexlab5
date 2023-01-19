@@ -3,7 +3,7 @@
     if (isset($_POST["submit"])) 
     {
         $name = $_POST["name"];
-        $assignedTo = $_POST["price"];
+        $assignedTo = $_POST["assignedTo"];
         $deadline = $_POST["deadlines"];
         $db->query("INSERT INTO tasks (name, assignedTo, deadline) VALUES ('$name', '$assignedTo', '$deadline')");
     }
