@@ -1,6 +1,6 @@
 <?php
     require("db.php");
-    $task = $db->query("SELECT * FROM tasks")->fetchAll(PDO::FETCH_ASSOC);
+    $item = $db->query("SELECT * FROM tasks")->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <!DOCTYPE html>
