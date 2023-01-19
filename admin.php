@@ -4,8 +4,8 @@
     {
         $name = $_POST[""];
         $assignedTo = $_POST["price"];
-        $descr = $_POST["descr"];
-        $db->query("INSERT INTO tasks (name, assignedTo, descr) VALUES ('$name', '$assignedTo', '$descr')");
+        $deadline = $_POST["deadlines"];
+        $db->query("INSERT INTO tasks (name, assignedTo, deadline) VALUES ('$name', '$assignedTo', '$deadline')");
     }
 
 ?>
