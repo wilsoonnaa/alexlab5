@@ -1,7 +1,7 @@
 <?php require ("db.php");
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $id = $_GET["id"];
-    $task = $db->query("SELECT * FROM task WHERE id=$id")->fetchAll();
+    $task = $db->query("SELECT * FROM tasks WHERE id=$id")->fetchAll();
 
 
     $task = $task[0];

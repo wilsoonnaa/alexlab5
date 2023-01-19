@@ -1,6 +1,6 @@
 <?php
     require("db.php");
-    $task = $db->query("SELECT * FROM task")->fetchAll();
+    $task = $db->query("SELECT * FROM tasks")->fetchAll();
 ?>
 
 <!DOCTYPE html>
