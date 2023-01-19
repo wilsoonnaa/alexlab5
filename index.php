@@ -19,15 +19,15 @@
     <div class="container">
         <?php
 
-        foreach ($task as $task) {
+        foreach ($item as $item) {
         ?>
             <div class="task-card">
-                <span class="task-card-name"><?php echo $task["name"] ?></span>
+                <span class="task-card-name"><?php echo $item["name"] ?></span>
                 <div class="task-content">
-                    <span class="task-card-assignedTo"><?php echo $task["assignedTo"] ?></span>
-                    <span class="task-card-deadline"><?php echo $task["deadline"] ?></span>
-                    <a class="hyperlinks" href="update.php?id=<?php echo $task['id']?>">Update</a>
-                    <a class="hyperlinks" href="delete.php?id=<?php echo $task['id']?>">Delete</a>
+                    <span class="task-card-assignedTo"><?php echo $item["assignedTo"] ?></span>
+                    <span class="task-card-deadline"><?php echo $item["deadline"] ?></span>
+                    <a class="hyperlinks" href="update.php?id=<?php echo $item['id']?>">Update</a>
+                    <a class="hyperlinks" href="delete.php?id=<?php echo $item['id']?>">Delete</a>
                 </div>
             </div>
         <?php
