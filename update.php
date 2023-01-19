@@ -1,7 +1,7 @@
 <?php require ("db.php");
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $id = $_GET["id"];
-    $task = $db->query("SELECT * FROM tasks WHERE id=$id")->fetchAll();
+    $task = $db->query("SELECT * FROM tasks WHERE id=$id")->fetchAll(PDO::FETCH_ASSOC);
 
 
     $task = $task[0];
@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         Task name: <input type="text" name="task_name" required value="<?php echo $task["name"]?>" /><br />
         Task solver: <input type="text" name="assignedTo" value="<?php echo $task["assignedTo"]?>" /><br />
         Deadline: <input type="date" name="deadline" value="<?php echo $task["deadline"]?>" /><br />
-        <input type="hidden" value="<?php echo $task["id"]?>" name="id"/>
+        <input type="hidden" value="<?php echo $id ?>" name="id"/>
         <input type="submit" value="Save" />
     </form>
     <a href="index.php"><strong>Back to home</strong></a>

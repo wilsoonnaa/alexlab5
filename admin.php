@@ -2,7 +2,7 @@
     require("db.php");
     if (isset($_POST["submit"])) 
     {
-        $name = $_POST[""];
+        $name = $_POST["name"];
         $assignedTo = $_POST["price"];
         $deadline = $_POST["deadlines"];
         $db->query("INSERT INTO tasks (name, assignedTo, deadline) VALUES ('$name', '$assignedTo', '$deadline')");
