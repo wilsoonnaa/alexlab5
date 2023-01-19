@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $assignedTo = $_POST['assignedTo'];
     $deadline = $_POST['deadline'];
 
-    $db->query("UPDATE task SET name='$name', assignedTo='$assignedTo', deadline='$deadline' WHERE id=$id");
+    $db->query("UPDATE tasks SET name='$name', assignedTo='$assignedTo', deadline='$deadline' WHERE id=$id");
     echo '<script>
     alert("Task succesfully updated");
     location.href = "index.php";
